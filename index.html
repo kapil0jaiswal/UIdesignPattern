@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class='texteditor'>
+        <div class='banner'>
+            <ul>
+                <li><button id='bold'><i class="fa fa-bold" aria-hidden="true"></i></button></li>
+                <li><button id='italic'><i class="fa fa-italic" aria-hidden="true"></i></button></li>
+                <li><button id='strike'><i class="fa fa-strikethrough" aria-hidden="true"></i></button></li>
+                <li><button id='left'><i class="fa fa-align-left" aria-hidden="true"></i></button></li>
+                <li><button id='right'><i class="fa fa-align-right" aria-hidden="true"></i></button></li>
+                <li><button id='center'><i class="fa fa-align-center" aria-hidden="true"></i></button></li>
+                <li><button id='superscript'><i class="fa fa-superscript" aria-hidden="true"></i></button></li>
+                <li><button id='subscript'><i class="fa fa-subscript" aria-hidden="true"></i></button></li>
+                <li><button id='ul'><i class="fa fa-list-ul" aria-hidden="true"></i></button></li>
+                <li><button id='ol'><i class="fa fa-list-ol" aria-hidden="true"></i></button></li>
+                <li><input type='color' id='bgcolor' title='bg color'></li>
+                <li><input type='color' id='fontcolor' title='Font color'></li>
+                <li><select id='fontfamily'>
+                    <option value='Times New Roman'>Times New Roman</option>
+                    <option value='Helvetica'>Helvetica</option>
+                    <option value='Courier New'>Courier New</option>
+                    <option value='Monospace'>Monospace</option>
+                    <option value='Cursive'>Cursive</option>
+                </select></li>
+                <li><select id='fontsize'>
+                    <script>
+                       for(var i=0; i<=10; i++){
+                        document.write(`<option value=`+i+`>` +i+ `</option>`);
+                       }
+                    </script>
+                </select></li>
+                <li><button id='link'> <i class="fa fa-link" aria-hidden="true"></i> </button></li>
+                <li><button id='unlink'><i class="fa fa-unlink" aria-hidden="true"></i></button></li>
+                <li><button id='undo'><i class="fa fa-undo" aria-hidden="true"></i></button></li>
+                <li><button id='redo'><i class="fa fa-repeat" aria-hidden="true"></i></button></li>
+            </ul>
+
+        </div>
+        <div class='holder'>
+            <iframe name='wysiwyg' id='wysiwyg' frameborder='0'></iframe>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/script.js"></script>
+</body>
+</html>
