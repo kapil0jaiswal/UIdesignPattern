@@ -77,6 +77,9 @@ function DragDrop() {
                       inputElement.current.click();
                       
                     }
+
+
+
 return (
     <div className="centreContainer">
       <div
