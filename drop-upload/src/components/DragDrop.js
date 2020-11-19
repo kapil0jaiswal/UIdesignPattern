@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 
 function DragDrop() {
+
     const [files, setFiles] = useState({})
     const dropX = useRef();
     const inputElement =useRef();
@@ -92,6 +93,7 @@ return (
       onClick={(e)=>onClickHandler(e)}
     >
       <span className="drop-zone__prompt">Drop file here or click to upload</span>
+     {/* <div class = "drop-zone__thumb" data-label = "myfile.txt"></div> */}
       <input type="file" ref={inputElement} name="file drop"  className="dropzone__input" onChange={(e)=>updateThumbnail(dropX,e.target.files[0])}  />
     </div>
     </div>
